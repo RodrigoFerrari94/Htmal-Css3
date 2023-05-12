@@ -13,22 +13,28 @@
 
         table{
             width: 500px;
+            height: 500px;
             border-collapse: collapse;
+            
+          
         }
 
-        tr.linha{
-            background-color: aqua;
-
-        }
         td{
             border: 1px solid black;
             padding: 5px;
+            text-align: center;
+            vertical-align: bottom;
         }
 
-        td.dado{
-            background-color: blue;
-            color: rgba(255, 8, 0, 0.596);
+        td.cima{
+            vertical-align: top;
         }
+
+        td.rigth{
+            text-align: right;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -36,18 +42,17 @@
     <table>
         <tr>
             <td>A1</td>
-            <td>B1</td>
-            <td class="dado
-            ">C1</td>
+            <td class="cima">B1</td>
+            <td>C1</td>
         </tr>
         <tr>
-            <td>A2</td>
+            <td class="rigth">A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
 
-        <tr  class="linha">
-            <td>A3</td>
+        <tr>
+            <td class="cima">A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
